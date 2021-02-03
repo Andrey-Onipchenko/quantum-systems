@@ -1,0 +1,42 @@
+.policy {
+  background: #fff;
+  color: #333;
+  font-size: 14px;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+  &__title {
+    font-size: 28px;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+  a {
+    color: #17d4fb;
+    text-decoration: none;
+    &:hover {
+      color: #00a3d9;
+      text-decoration: underline;
+    }
+  }
+  p {
+    margin: 0 0 10px;
+    text-align: justify;
+  }
+  ul {
+    padding: inherit;
+    list-style: initial;
+  }
+  table#agreement tr th:nth-child(odd),
+  table#agreement tr td:nth-child(odd) {
+    width: 70%;
+  }
+  table#agreement tr th:nth-child(even),
+  table#agreement tr td:nth-child(even) {
+    width: 30%;
+    text-align: center;
+  }
+  .text-center {
+    text-align: center;
+  }
+}

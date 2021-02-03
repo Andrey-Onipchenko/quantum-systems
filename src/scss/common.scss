@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  background: #1e2736 url("../../dist/images/mountain.jpg") 50% 0% no-repeat;
+  background-size: 100%;
+}
+ul {
+  list-style-type: none;
+}
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  @media (max-width: 992px) {
+    max-width: 970px;
+  }
+  @media (max-width: 768px) {
+    max-width: 750px;
+  }
+}
+h1,
+h2,
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 5px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 39px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  color: #17d4fb;
+}
+h2 {
+  font-size: 26px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0;
+  line-height: 1.4;
+}
+.text-center {
+  text-align: center;
+}

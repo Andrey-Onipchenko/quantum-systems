@@ -1,0 +1,65 @@
+.counter {
+  position: fixed;
+  bottom: 15px;
+  left: 10px;
+  width: 170px;
+  height: 68px;
+  z-index: 500;
+  @media (max-width: 768px) {
+    display: none;
+  }
+  &_peoples {
+    left: auto;
+    right: 10px;
+  }
+  &__num {
+    left: 0;
+    background: url("../../dist/images/pin-online.png") 50% 50% no-repeat;
+    color: #17d4fb;
+    &_online,
+    &_peoples {
+      position: absolute;
+      top: 0;
+      width: 60px;
+      height: 68px;
+      font-family: "Bebas Neue", cursive;
+      font-size: 26px;
+      line-height: 58px;
+      text-align: center;
+      overflow: hidden;
+      padding-top: 3px;
+    }
+    &_peoples {
+      left: auto;
+      right: 0;
+      background: url("../../dist/images/pin-slots.png") 50% 50% no-repeat;
+      color: #11cc1a;
+    }
+  }
+  &__label {
+    margin: 7px 0;
+    border-radius: 8px;
+    border: 2px dashed;
+    font-weight: 400;
+    color: #fff;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    &_online {
+      border-color: #17d4fb;
+      padding-left: 35px;
+      margin-left: 30px;
+      .counter__span {
+        color: #17d4fb;
+      }
+    }
+    &_peoples {
+      border-color: #11cc1a;
+      padding-right: 35px;
+      margin-right: 30px;
+      .counter__span {
+        color: #11cc1a;
+      }
+    }
+  }
+}

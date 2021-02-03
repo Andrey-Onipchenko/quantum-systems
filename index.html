@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Добро пожаловать! - Quantum System</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic-ext"
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link rel="stylesheet" href="./dist/css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__inner-logo">
+            <img class="header__logo" src="./dist/images/logo.png" alt="" />
+          </div>
+          <h3 class="header__text">
+            Посмотрите это видео и узнайте, как зарабатывать более $630,820
+            каждый месяц!
+          </h3>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="video">
+          <div class="video__wrapper">
+            <div
+              class="volume"
+              onclick="document.querySelector('video').muted = false; this.style.display = 'none'"
+            >
+              <i class="fas fa-5x fa-volume-up unmute-btn"></i>
+              <p>Включить звук</p>
+            </div>
+            <video
+              class="video__out"
+              width="620"
+              height="370"
+              oncontextmenu="return false;"
+              autoplay=""
+              muted=""
+            >
+              <source src="./dist/video/video1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <form class="form-vip" method="GET" action="./registration.html">
+          <div class="form-vip__row">
+            <div class="form-vip__group">
+              <div class="form-vip__group-name"></div>
+              <input
+                type="text"
+                name="firstname"
+                class="form-vip__group-input"
+                id="name"
+                placeholder="Введите ваше имя"
+                value=""
+                required="true"
+              />
+            </div>
+            <div class="form-vip__group">
+              <div class="form-vip__group-email"></div>
+              <input
+                type="email"
+                name="email"
+                class="form-vip__group-input"
+                id="email"
+                placeholder="Действующий e-mail"
+                value=""
+                required="true"
+              />
+            </div>
+          </div>
+          <div class="form-vip__row">
+            <button class="form-vip__subscribe" type="submit">
+              ДА! Я ХОЧУ ПОЛУЧИТЬ VIP ДОСТУП К QUANTUM SYSTEM ПРЯМО СЕЙЧАС
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="container">
+        <div class="trusted">
+          <img class="trusted__item" src="./dist/images/trusted-1.png" alt="" />
+          <img class="trusted__item" src="./dist/images/trusted-2.png" alt="" />
+          <img class="trusted__item" src="./dist/images/trusted-3.png" alt="" />
+          <img class="trusted__item" src="./dist/images/trusted-4.png" alt="" />
+          <img class="trusted__item" src="./dist/images/trusted-5.png" alt="" />
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <nav class="menu">
+          <a class="menu__link" href="#">Контакты </a>
+          <a class="menu__link" href="/policy.html"
+            >Политика конфиденциальности</a
+          >
+          <a class="menu__link" href="/agreement.html"
+            >Пользовательское соглашение</a
+          >
+        </nav>
+        <div class="copyright">Copyright ©2021 – Quantum System Management</div>
+      </div>
+    </footer>
+
+    <div class="container">
+      <div class="counter" data-counter="counter">
+        <div
+          class="counter__num counter__num_online"
+          data-counter="counter-num"
+        >
+          138
+        </div>
+        <div class="counter__label counter__label_online">
+          <span class="counter__span">ЧЕЛОВЕК</span> на странице
+        </div>
+      </div>
+      <div class="counter counter_peoples" data-counter="counter-peoples">
+        <div
+          class="counter__num counter__num_peoples"
+          data-counter="counter-num"
+        >
+          7
+        </div>
+        <div class="counter__label counter__label_peoples">
+          <span class="counter__span">свободных</span> мест
+        </div>
+      </div>
+    </div>
+    <script src="./dist/js/main.js"></script>
+  </body>
+</html>

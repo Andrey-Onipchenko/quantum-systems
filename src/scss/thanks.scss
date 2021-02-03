@@ -1,0 +1,31 @@
+.thanks {
+  background: url("../../dist/images/header-bg.jpg") top center no-repeat;
+  background-size: cover;
+  padding-bottom: 4rem;
+  min-height: 100vh;
+  padding-top: 32px;
+  &__message {
+    color: #fff;
+    border: 2px solid red;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto 64px;
+    width: 90%;
+    max-width: 900px;
+    font-size: 24px;
+  }
+  &__home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__link {
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: #12bd00;
+    border-radius: 15px;
+    text-decoration: none;
+  }
+}

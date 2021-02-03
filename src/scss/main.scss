@@ -1,0 +1,180 @@
+.main {
+  background: url("../../dist/images/bg-data.png") 50% 0% no-repeat;
+}
+.video {
+  width: 100%;
+  max-width: 970px;
+  margin: 20px auto 30px;
+  &_register {
+    max-width: 760px;
+  }
+  &__wrapper {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 58%;
+    z-index: 500;
+  }
+  &__out {
+    position: absolute;
+    top: 11px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: black;
+  }
+}
+.volume {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: calc(50% - 70px);
+  left: calc(50% - 80px);
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  animation: pulse 1s linear infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.form-vip {
+  &__row {
+    display: flex;
+    justify-content: center;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  &__group {
+    display: flex;
+    margin: 0 15px;
+    max-width: 360px;
+    width: 100%;
+    @media (max-width: 768px) {
+      margin: 0;
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+    &-name,
+    &-email {
+      background: #eee url("../../dist/images/ico-name.png") center center
+        no-repeat;
+      padding: 12px 12px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1;
+      color: #555;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 4px 0 0 4px;
+      min-width: 35px;
+    }
+    &-email {
+      background: #eee url("../../dist/images/ico-email.png") center center
+        no-repeat;
+    }
+    &-input {
+      display: inline-block;
+      height: 50px;
+      padding: 6px 12px;
+      font-size: 14px;
+      line-height: 1.4;
+      color: #555;
+      border: 1px solid #ccc;
+      border-radius: 0 4px 4px 0;
+      width: 100%;
+      &:focus {
+        border-color: #66afe9;
+        outline: transparent;
+        box-shadow: inset 0 1px 1px #66afe9, 0 0 8px #66afe9;
+      }
+    }
+  }
+  &__subscribe {
+    display: block;
+    max-width: 750px;
+    width: 100%;
+    background: linear-gradient(to bottom, #12d11b 0%, #069c0d 100%);
+    min-height: 50px;
+    margin: 20px auto 60px;
+    padding: 10px;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6),
+      inset 0 2px 0 0 rgba(255, 255, 255, 0.3);
+    @media (max-width: 768px) {
+      max-width: 100%;
+      font-size: 14px;
+    }
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
+.trusted {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 33px;
+  &__item {
+    display: inline-block;
+    object-fit: cover;
+    margin: 12px;
+    max-width: calc(20% - 30px);
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  font-size: 14px;
+  flex-wrap: wrap;
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
+  &__link {
+    color: #fff;
+    margin: 3px 10px;
+    text-decoration: none;
+    position: relative;
+    &:hover::after {
+      content: "";
+      position: absolute;
+      background: #fff;
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+.copyright {
+  text-align: center;
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
+}
